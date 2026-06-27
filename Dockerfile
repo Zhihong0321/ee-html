@@ -13,9 +13,9 @@ COPY server.js ./
 ENV NODE_ENV=production \
     DATA_DIR=/data
 
-# Create the volume mount point.
+# Create the data directory. On Railway, attach a Volume with mount path /data
+# (the Dockerfile VOLUME instruction is not supported by Railway's builder).
 RUN mkdir -p /data
-VOLUME ["/data"]
 
 EXPOSE 3000
 CMD ["node", "server.js"]
