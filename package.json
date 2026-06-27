@@ -1,0 +1,19 @@
+{
+  "name": "html-host-engine",
+  "version": "1.0.0",
+  "description": "Dead-simple host for AI agents to push multi-file HTML apps to Railway via API.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "express": "^4.19.2",
+    "multer": "^2.0.1"
+  }
+}
